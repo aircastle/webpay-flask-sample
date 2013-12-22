@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block body %}
+<h3>想像購入しました</h3>
+{% if charge.id %}
+<p>配送に関するお問い合わせ時に、{{ charge.id }} をお知らせください。</p>
+{% endif %}
+<ul>
+  <li><a href='http://www.amazon.co.jp/dp/4774158747/' target='_blank'>実際に購入する</a></li>
+  <li><a href='/'>もう一度購入する</a></li>
+</ul>
+{% endblock %}
